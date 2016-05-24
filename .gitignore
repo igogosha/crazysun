@@ -41,3 +41,4 @@
 
 # Node Modules: npm install
 /node_modules/
+/typings/
