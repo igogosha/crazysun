@@ -42,3 +42,10 @@
 # Node Modules: npm install
 /node_modules/
 /typings/
+
+/app/*.js
+/app/*.map
+
+.idea/
+
+npm-debug.log

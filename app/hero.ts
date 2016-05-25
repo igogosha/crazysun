@@ -1,8 +1,7 @@
-import { bootstrap }    from '@angular/platform-browser-dynamic';
-
-import { AppComponent } from './app.component';
-
-bootstrap(AppComponent);
+export class Hero {
+  id: number;
+  name: string;
+}
 
 
 /*
