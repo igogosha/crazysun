@@ -49,3 +49,6 @@
 .idea/
 
 npm-debug.log
+
+app/main.js
+app/main.js.map

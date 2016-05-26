@@ -4,6 +4,7 @@ import { RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from '@angular/route
 import { DashboardComponent } from './dashboard.component';
 import { HeroesComponent } from './heroes.component';
 import { HeroDetailComponent } from './hero-detail.component';
+import { AboutComponent } from './about.component';
 import { HeroService } from './hero.service';
 
 @Component({
@@ -13,6 +14,7 @@ import { HeroService } from './hero.service';
     <nav>
       <a [routerLink]="['Dashboard']">Dashboard</a>
       <a [routerLink]="['Heroes']">Heroes</a>
+      <a [routerLink]="['About']">About Us</a>
     </nav>
     <router-outlet></router-outlet>
   `,
@@ -39,15 +41,14 @@ import { HeroService } from './hero.service';
         path: '/heroes',
         name: 'Heroes',
         component: HeroesComponent
-    }
+    },
+    {
+        path: '/about',
+        name: 'About',
+        component: AboutComponent
+    },
+
 ])
 export class AppComponent {
     title = 'Tour of Heroes';
 }
-
-
-/*
- Copyright 2016 Google Inc. All Rights Reserved.
- Use of this source code is governed by an MIT-style license that
- can be found in the LICENSE file at http://angular.io/license
- */
